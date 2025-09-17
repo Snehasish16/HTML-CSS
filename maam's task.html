@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: chartreuse;
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            text-decoration:none;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+        .cart{
+            margin-top: 20px;
+        }
+        .parent{
+            height: auto;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .img{
+            border: 1px solid brown;
+            height: 300px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .img img{
+            height: 300px;
+            width: 300px;
+        }
+        .btn{
+            border: 2px solid black;
+            border-radius: 50%;
+            padding:5px 10px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content h1{
+            color: brown;
+            font-size: 30px;
+        }
+        .available{
+            background-color: green;
+        }
+        .not-available{
+            background-color: red;
+        }
+        .content p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:20px;
+            margin-bottom: 10px;
+        }
+        #price{
+            font-size: 20px;
+            color:green;
+            
+        }
+        .shop-btn{
+            border: 2px solid black;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold
+        }
+        .add-cart{
+            background-color: rgba(242, 242, 49, 0.861);
+        }
+        .buy-now{
+            background-color: rgba(123, 198, 230, 0.8);
+        }
+        #price::after{
+            content: ' In Stock';
+            color:orangered
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Amazon </a>
+    </nav>
+    <section class="cart">
+        <div class="parent">
+            <div class="img">
+                <img src="https://media.powerlook.in/catalog/product/d/p/dp21203321.jpg?aio=w-640" alt="">
+            </div>
+            <div class="content">
+                <h1>USP Shirt</h1>
+
+                <button class="btn available">S</button>
+                <button class="btn available">M</button>
+                <button class="btn not-available">L</button>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolorum?</p>
+
+                <h3 id="price">&#8377; 3999</h3> 
+
+                <button class="shop-btn add-cart">Add To Cart</button>
+                <button class="shop-btn buy-now">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

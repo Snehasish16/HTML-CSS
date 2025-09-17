@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jspider</title>
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+    <style>
+        html {
+            font-size: 16px;
+
+            nav {
+                background-color: black;
+                padding: 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+
+        #jspider {
+            font-size: 2.5rem;
+            margin-top: 0rem;
+            margin-bottom: 0.2rem;
+            color: white;
+        }
+
+        #jspider::first-letter {
+            color: orange;
+        }
+
+        .training {
+            font-size: 0.8rem;
+            margin-top: 0rem;
+            color: white;
+            display: inline-block;
+            float: left ;
+        }
+
+        .home {
+        display: inline-block;
+        margin-left: 250px;
+        font-size: 1.3rem;
+        }
+        .home:hover{
+            color: rgb(1, 1, 104);
+        }
+        a{
+            background-color: orange;
+            color: white;
+            padding: 0.4rem 1rem;
+            margin-right: 0.3rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: antiquewhite;
+            color: rgb(1, 1, 104);
+            box-shadow: 0 0 30px white;
+        }
+        i:hover{
+            color: rgb(1, 1, 104);
+        }
+        i{
+            color: white;
+            margin-right: 5px;
+        }
+        .hidden{
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            position: relative;
+            display:inline-block ;
+        }
+        .hidden-child{
+            border: 2px solid black;
+            padding: 5px;
+            display: inline-block;
+        }
+        .global{
+            width: 200px;
+            border: 2px solid black;
+            /* display: inline-block; */
+            padding: 20px;
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        .hidden-child:hover + .global{
+            display: block;
+
+        }
+        /* .global:hover + p{
+            background-color: beige;
+        } */
+        .hidden-child2{
+            border: 2px solid black;
+            padding: 5px;
+            display: inline-block;
+        }
+        .online{
+             width: 200px;
+            border: 2px solid black;
+            display: inline-block;
+            padding: 20px;
+            display: none;
+        }
+        .hidden-child2:hover + .online{
+            display: block;
+
+        }
+        .up-arrow{
+            display: inline;
+        }
+        /* .hidden-child:hover .up-arrow{
+            display: none;
+        }
+        .hidden-child:hover .down-arrow{
+            display: inline;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 id="jspider">Jspider</h1>
+        <p class="training">Training and development center</p>
+
+        <div class="home">
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#"><i class="fa-solid fa-book"></i>Courses</a>
+            <a href="#"><i class="fa-solid fa-calendar-days"></i>Batches</a>
+            <a href="#"><i class="fa-solid fa-cubes"></i>Corporates</a>
+            <a href="#"><i class="fa-solid fa-map"></i>Contact</a>
+            <a href="#"><i class="fa-solid fa-users"></i>Placements</a>
+            <a href="#"><i class="fas fa-edit fa-lg"></i>Enquiry</a>
+            <a href="#"><i class="fa-solid fa-address-book"></i>+91-9348756621</a>
+        </div>
+    </nav>
+    <div class="hidden">
+        <p class="hidden-child">Global 
+            <i class="fa-solid fa-angle-down down-arrow"></i></p>
+            <div class="global">
+                <p>India</p>
+                <p>USA</p>
+                <p>Russia</p>
+                <p>Spain</p>
+                <p>Italy</p>
+            </div>
+
+        <!-- <p class="hidden-child2">Online</p>
+             <div class="online">
+                <p>jan</p>
+                <p>feb</p>
+                <p>mar</p>
+                <p>apr</p>
+                <p>may</p>
+            </div> -->
+
+
+    </div>
+
+</body>
+
+</html>
