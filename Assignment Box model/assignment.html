@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Box model</title>
+    <style>
+        .para1 {
+            background-color: rgb(87, 252, 252);
+            height: 150px;
+            width: 150px;
+            border: 5px solid black;
+            padding: 65px 60px 65px 55px;
+            margin-top: 20px;
+            margin-left: 20px;
+            box-sizing: border-box;
+        }
+
+        .parent1 {
+            background-color: rgb(140, 255, 140);
+            height: 150px;
+            width: 150px;
+            border: 5px dashed black;
+            padding: 40px 40px;
+            margin-left: 170px;
+            box-sizing: border-box;
+        }
+        .child1 {
+            background-color: rgb(255, 204, 121);
+            height: 70px;
+            width: 70px;
+            border: 5px double black;
+            padding-top: 23px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 18px;
+            box-sizing: border-box;
+        }
+
+        .para2 {
+            background-color: rgb(248, 148, 255);
+            height: 150px;
+            width: 150px;
+            border: 5px groove rgb(2, 28, 161);
+            padding: 60px 65px;
+            margin-left: 320px;
+            box-sizing: border-box;
+        }
+
+        .child2 {
+            background-color: rgb(255, 132, 132);
+            height: 70px;
+            width: 70px;
+            border: 5px dotted rgb(120, 3, 216);
+            padding: 20px 15px;
+            box-sizing: border-box;
+        }
+
+        .parent2 {
+            background-color: rgb(253, 255, 124);
+            height: 150px;
+            width: 150px;
+            border: 5px outset rgb(79, 199, 218);
+            padding: 40px 40px;
+            margin-left: 470px;
+            box-sizing: border-box;
+        }
+
+        .parent3 {
+            background-color: blanchedalmond;
+            height: 150px;
+            width: 150px;
+            border: 5px inset rgb(237, 230, 51);
+            padding: 24px;
+            margin-left: 620px;
+            box-sizing: border-box;
+        }
+
+        .child3 {
+            background-color: rgb(11, 61, 24);
+            height: 100px;
+            width: 100px;
+            border: 4px dashed rgb(170, 190, 241);
+            padding: 18px;
+            box-sizing: border-box;
+        }
+
+        .gchild3 {
+            background-color: rgb(240, 157, 113);
+            height: 60px;
+            width: 60px;
+            border: 3px solid rgb(250, 245, 245);
+            padding: 16px 12px 12px 12px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="para1">
+        Html
+    </div>
+
+    <div class="parent1">
+        <div class="child1">
+            CSS
+        </div>
+    </div>
+
+    <div class="para2">
+        JS
+    </div>
+
+    <div class="parent2">
+        <div class="child2">
+            React
+        </div>
+    </div>
+
+    <div class="parent3">
+        <div class="child3">
+            <div class="gchild3">
+                Node
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
