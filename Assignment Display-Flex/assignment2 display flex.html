@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 (diplay flex)</title>
+    <style>
+        nav {
+            font-size: 25px;
+            margin: px;
+            height: 70px;
+            background-color: rgb(49, 88, 108);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            font-weight: bold ;
+        }
+
+        .main {
+            height: 45rem;
+            width: 100%;
+            background-color: rgb(111, 139, 155);
+        }
+
+        .firstline {
+            font-size: 25px;
+            color: white;
+            padding-top: 30px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            font-weight: bold ;
+        }
+        .parent{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 50px;
+        }
+        .profile {
+            /* border: 2px solid black; */
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.642);
+            height: 250px;
+            width: 170px;
+            background-color: white;
+
+        }
+        img{
+            height: 75%;
+            width: 100%;
+            border-radius: 2px;
+        }
+        .info{
+            height: 0%;
+            margin-top: 0%;
+            margin-left: 10px;
+        }
+        .secondline{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            color: white;
+        }
+        .parent2{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .destroy-humanity{
+            font-weight: bold;
+            background-color: white;
+            width: 250px;
+            height: 60px;
+            padding-top: 10px;
+            padding-left: 20px;
+            font-size: 17px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.642);
+        }
+        .first{
+            width: 70px;
+            height: 25px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(49, 88, 108);
+            display: block;
+            margin-top: 4px;
+        }
+        .lastbutton{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .add-task{
+            width: 130px;
+            height: 40px;
+            background-color: rgb(49, 88, 108);
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Group Task Manager</nav>
+    <div class="main">
+        <p class="firstline" align="center">Assignment Group One</p>
+        <div class="parent">
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+                <p class="info"><b>John Doe</b></p>
+                <p class="info">current Task: UI &nbsp; &nbsp; Desing</p>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+                <p class="info"><b>Jane Smith</b></p>
+                <p class="info">current Task: interviewing</p>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+                <p class="info"><b>Joe Bloggs</b></p>
+                <p class="info">current Task: Affinity Mapping</p>
+            </div>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+                <p class="info"><b>Foo Bar</b></p>
+                <p class="info">current Task: Stakeholder Map</p>
+            </div>
+        </div>
+        <p class="secondline"><b>Remaining Tasks</b></p>
+        <div class="parent2">
+            <div class="destroy-humanity">Destroy Humanity 
+                <button class="first">Assign</button> 
+            </div>
+        </div>
+        <div class="lastbutton">
+            <button class="add-task">Add Task</button>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>
