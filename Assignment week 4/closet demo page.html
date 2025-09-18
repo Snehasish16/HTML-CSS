@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet</title>
+    <script src="https://kit.fontawesome.com/f8dd27610c.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            height: 40px;
+            display: flex;
+            padding-left: 40px;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .main-bg {
+            position: relative;
+        }
+
+        .left-bg {
+            display: inline-block;
+            width: 70%;
+            height: 275vh;
+            background-color: #f9bac7;
+            z-index: -1;
+        }
+
+        .right-bg {
+            display: inline-block;
+            background-color: #38c4c1;
+            width: 30%;
+            height: 275vh;
+            position: absolute;
+            left: 70%;
+            z-index: -1;
+        }
+
+        nav {
+            height: 70px;
+            width: 100%;
+            background-color: rgb(255, 254, 254);
+            position: sticky;
+            z-index: 2;
+            top: 0px;
+            left: px;
+            /* box-shadow: -10px 12px 20px rgba(0, 0, 0, 0.678); */
+        }
+
+        .closet-logo {
+            width: 5.5%;
+            position: absolute;
+            top: 5px;
+            left: 35px;
+        }
+
+        .search-bar {
+            background-color: #f2f2f296;
+            border: 0px;
+            width: 500px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 150px;
+            padding-left: 70px;
+            background-image: url(https://img.icons8.com/ios7/600/search.png);
+            background-size: 3%;
+            background-repeat: no-repeat;
+            background-position-y: 5px;
+            background-position-x: 20px;
+            border-radius: 5px;
+        }
+
+        .home {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            left: 850px;
+            top: 15px;
+        }
+
+        .nav-button {
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .nav-button:hover {
+            background-color: #f2f2f296;
+            border: 2px solid rgb(146, 146, 146);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(176, 176, 176);
+        }
+
+        .icons {
+            margin-left: 140px;
+            margin-top: 5px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .button-icon {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border: none;
+        }
+
+        .button-icon:hover {
+            color: #ffc6cf;
+        }
+
+        .above-content-bar {
+            background-color: white;
+            height: 40px;
+            width: 1198px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 185px;
+            left: 158px;
+            z-index: 1;
+            box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.678);
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+
+        .bar-button {
+            height: 30px;
+            width: 120px;
+            background-color: white;
+            border: none;
+        }
+
+        .bar-button:hover {
+            background-color: #f2f2f296;
+            border: 2px solid rgb(146, 146, 146);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(176, 176, 176);
+        }
+
+        .content {
+            height: 500px;
+            width: 80%;
+            background-color: #f9c8cf;
+            position: absolute;
+            z-index: 1;
+            top: 115px;
+            left: 150px;
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+        }
+
+        .description {
+            width: 300px;
+            font-size: 18px;
+            margin-top: 80px;
+            margin-left: 80px;
+            /* border: 2px solid black; */
+        }
+
+        .shop-now {
+            width: 100px;
+            height: 30px;
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        .shop-now:hover{
+            background-color: white;
+            color: black;
+            border: none;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.678);
+
+        }
+
+        .model1 {
+            position: absolute;
+            z-index: 1;
+            width: 274px;
+            height: 305px;
+            top: 115px;
+            left: 810px;
+        }
+
+        .model2 {
+            position: absolute;
+            z-index: 1;
+            width: 274px;
+            height: 189px;
+            top: 426px;
+            left: 810px;
+        }
+
+        .model3 {
+            position: absolute;
+            z-index: 1;
+            width: 265px;
+            height: 305px;
+            top: 115px;
+            left: 1082px;
+        }
+
+        .model4 {
+            position: absolute;
+            z-index: 1;
+            width: 265px;
+            height: 189px;
+            top: 426px;
+            left: 1082px;
+            margin-top: 0px;
+        }
+
+        .deals {
+            height: 450px;
+            width: 80%;
+            background-color: #ffffff;
+            position: absolute;
+            z-index: 1;
+            top: 650px;
+            left: 150px;
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+        }
+
+        .text-dealoftheday {
+            font-size: 350%;
+            text-align: center;
+            color: rgb(65, 65, 65);
+            text-shadow: 0px 5px 5px rgb(154, 154, 154);
+        }
+
+        .deal-box {
+            width: 280px;
+            height: 250px;
+            /* border: 2px solid black; */
+            display: inline-block;
+            margin-left: 10px;
+            padding-left: 25px;
+            box-sizing: border-box;
+        }
+
+        .deal-img {
+            width: 90%;
+            height: 70%;
+        }
+        .deal-box:hover{
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+
+        }
+
+        .category {
+            height: 850px;
+            width: 80%;
+            background-color: #ffffff;
+            position: absolute;
+            z-index: 1;
+            top: 1140px;
+            left: 150px;
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+        }
+        .category-child{
+            display: flex;
+            margin-left: 50px;
+            margin-right: 50px;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .category-img{
+            width: 200px;
+            height: 300px;
+            /* border: 2px solid black; */
+        }
+        .types{
+            width:100% ;
+            height: 90%;
+        }
+        .category-img:hover{
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+            
+        }
+        .dress{
+            margin-top: 0px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .contact-us {
+            width: 6%;
+            border-radius: 100px;
+            position: fixed;
+            left: 1385px;
+            top: 620px;
+            z-index: 5;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            margin-top: 1px;
+            display: flex;
+            gap: 700px;
+        }
+        .foot-text{
+            margin-left: 30px;
+        }
+        .foot-icon{
+            position: relative;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+    </header>
+    <nav>
+        <img class="closet-logo" src="WhatsApp Image 2025-05-26 at 11.41.59 PM.jpeg" alt="">
+        <input class="search-bar" type="text" placeholder="search for products, brands and more">
+        <div class="home">
+            <button class="nav-button">Home</button>
+            <button class="nav-button">Shop</button>
+            <button class="nav-button">About</button>
+            <button class="nav-button">Contact</button>
+            <div class="icons">
+                <button class="button-icon"><i class="fa-solid fa-heart"></i></button>
+                <button class="button-icon"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="button-icon"><i class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="above-content-bar">
+        <button class="bar-button">All <i class="fa-solid fa-angle-down"></i></button>
+        <button class="bar-button">Men</button>
+        <button class="bar-button">Women</button>
+        <button class="bar-button">Kids </button>
+        <button class="bar-button">Acessories <i class="fa-solid fa-angle-down"></i></button>
+        <button class="bar-button">Beauty <i class="fa-solid fa-angle-down"></i></button>
+        <button class="bar-button">Gen-Z</button>
+        <button class="bar-button">More <i class="fa-solid fa-angle-down"></i></button>
+    </div>
+    <div class="main-bg">
+        <div class="left-bg"></div>
+        <div class="right-bg"></div>
+
+        <div class="content">
+            <div class="description">
+                <h1
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    New Arrivals</h1>
+                <p>Discover the latest trends with our new arrivals. Designed with a focus on both style and quality,
+                    our collection offers timeless prices for every wardrobe.</p>
+                <button class="shop-now">Shop Now</button>
+            </div>
+        </div>
+        <div class="models">
+            <img class="model1" src="model1.png" alt="">
+            <img class="model2" src="model2.png" alt="">
+            <img class="model3" src="model3.png" alt="">
+            <img class="model4" src="model4.png" alt="">
+        </div>
+        <div class="deals">
+            <h1 class="text-dealoftheday">Deals Of The Day</h1>
+            <div class="deal-box">
+                <img src="https://jadeblue.com/cdn/shop/articles/mens_summer_wear.jpg?v=1714380887&width=1100" alt=""
+                    class="deal-img">
+                <pre style="padding-left: 5px;">    men's lilen collections
+        upto 60% off</pre>
+            </div>
+            <div class="deal-box">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/1812820250327140019.jpg?w=667&dpr=1.0"
+                    alt="" class="deal-img">
+                <pre style="padding-left: 0px;">    women's westen collections
+           upto 40% off</pre>
+            </div>
+            <div class="deal-box">
+                <img src="https://m.media-amazon.com/images/I/71Hn0gvX85L._AC_SX522_.jpg" alt="" class="deal-img">
+                <pre style="padding-left: 0px;">    kid's casual collections
+          upto 60% off</pre>
+            </div>
+            <div class="deal-box">
+                <img src="https://www.aviationkart.com/cdn/shop/files/31364f66-6c2e-4fc0-b7bf-5798b28ea630_1200x1200.jpg?v=1710740787"
+                    alt="" class="deal-img">
+                <pre style="padding-left: 30px;">    bag collections
+      upto 80% off</pre>
+            </div>
+        </div>
+        <div class="category">
+            <h1 class="text-dealoftheday">Shop By Category</h1>
+            <div class="category-child">
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/outfit/S/87046339_52-99999999_01.jpg?imwidth=640&imdensity=1&ts=1741885511847" alt="" class="types"><p class="dress">Dresses</p></div>
+
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17031249_28.jpg?imwidth=640&imdensity=1&ts=1747157702049" alt="" class="types"><p class="dress">T-shirt</p></div>
+
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17021231_56.jpg?imwidth=640&imdensity=1&ts=1744650385349" alt="" class="types"><p class="dress">Shirt</p></div>
+
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87079204_16.jpg?imwidth=640&imdensity=1&ts=1742393093230" alt="" class="types"><p class="dress">Pants</p></div>
+
+                <div class="category-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hgSJUyC5kPaAA6ft5Z13zhqIqGSVO9SC5KThVBj6gVVO7os3LzejjYpcHxnGOWruUPE&usqp=CAU" alt="" class="types"><p class="dress">Sweater</p></div>
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/S/87010586_99.jpg?imwidth=640&imdensity=1&ts=1730135095197" alt="" class="types"><p class="dress">Jacket</p></div>
+
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/outfit/S/87045944_08-99999999_01.jpg?imwidth=640&imdensity=1&ts=1741601121485" alt="" class="types"><p class="dress">Kids</p></div>
+
+                <div class="category-img"><img src="https://shop.mango.com/assets/rcs/pics/static/T8/fotos/outfit/S/87048640_32-99999999_01.jpg?imwidth=640&imdensity=1&ts=1745571953496" alt="" class="types"><p class="dress">Bags</p></div>
+            </div>
+                
+        </div>
+        <div>
+            <img src="chat2.jpg" alt="" class="contact-us">
+        </div>
+    </div>
+    <footer>
+        <div><p class="foot-text">show us some love on social media 
+            <i class="fa-brands fa-instagram foot-icon"></i>
+            <i class="fa-brands fa-facebook foot-icon"></i>
+            <i class="fa-brands fa-twitter foot-icon"></i>
+            <i class="fa-brands fa-threads foot-icon"></i>
+            <i class="fa-brands fa-pinterest foot-icon"></i></p>
+            
+        </div>
+        <p class="foot-text2">© 2025 CLOSET E-RETAIL LIMITED All Rights Reserved </p>
+    </footer>
+</body>
+
+</html>
