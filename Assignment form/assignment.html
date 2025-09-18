@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student application form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>STUDENT APPLICATION FORM</h1>
+        </legend>
+
+        <form action="">
+            <label for="first">FIRST NAME</label>
+            <input type="text" name="first" id="first" value="" maxlength="30" pattern="[A-Za-z]+">
+            <br><br>
+
+            <label for="last">LAST NAME</label>
+            <input type="text" name="first" id="first" value="" maxlength="30" pattern="[A-Za-z]+">
+            <br><br>
+
+            <label for="dob">DATE OF BIRTH</label>
+            <input type="date" name="dob" id="dob" value="" placeholder="dd-mm-yyyy">
+            <br><br>
+
+            <label for="email">EMAIL ID</label>
+            <input type="email" name="email" id="email" value="">
+            <br><br>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" name="phone" id="phone" value="" maxlength="10" pattern="[0-9]+">
+            <br><br>
+
+            <label for="gender">GENDER</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <br><br>
+
+            <label for="address">ADDRESS</label>
+            <textarea name="address" id="address" rows="10" cols="50"></textarea>
+            <br><br>
+
+            <label for="city">CITY</label>
+            <input type="text" name="city" id="city" value="" maxlength="30" pattern="[A-Za-z]+">
+            <br><br>
+
+            <label for="pin">PINCODE</label>
+            <input type="text" name="pin" id="pin" value="" pattern="[0-9]+">
+            <br><br>
+
+            <label for="state">STATE</label>
+            <input type="text" name="state" id="state" value="" maxlength="30" pattern="[A-Za-z]+">
+            <br><br>
+
+            <label for="country">COUNTRY</label>
+            <input type="text" name="country" id="country" value="INDIA" maxlength="30">
+            <br><br>
+
+            <label for="hobbies">HOBBIES</label>
+            <input type="checkbox" value="Drawing"> DRAWING
+            <input type="checkbox" value="Singing"> SINGING
+            <input type="checkbox" value="Dancing"> DANCING
+            <input type="checkbox" value="Sketching"> SKETCHING
+            <br>
+            <input type="checkbox" value="Others"> OTHERS <input type="text" value="">
+            <br><br>
+
+            <label for="qual">QUALIFICATION</label>
+            <table>
+                <thead align="center">
+                    <tr>
+                        <td><b>S.No</b></td>
+                        <td><b>Examination</b></td>
+                        <td><b>Board</b></td>
+                        <td><b>Percentage</b></td>
+                        <td><b>Year of passing</b></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>class X</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>class XII</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </thead>
+            </table>
+            <br><br>
+            <label for="courses">COURSES APPLIED FOR </label>
+            <input type="radio" name="courses" value="B.com"> B.com
+            <input type="radio" name="courses" value="B.Sc"> B.Sc
+            <input type="radio" name="courses" value="B.A"> B.A
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
