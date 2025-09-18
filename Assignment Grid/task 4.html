@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <script src="https://kit.fontawesome.com/f8dd27610c.js" crossorigin="anonymous"></script>
+    <Style>
+        nav {
+            margin-top: 50px;
+            margin-left: 150px;
+            margin-right: 100px;
+            width: 80%;
+            height: 80px;
+            /* border: 2px solid black; */
+
+        }
+
+        .solidity {
+            margin-top: 0px;
+            color: rgb(0, 179, 69);
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+        }
+
+        .statement {
+            margin-top: -40px;
+            margin-left: 3px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 13px;
+        }
+
+        input {
+            width: 400px;
+            height: 25px;
+            float: right;
+            margin-top: 10px;
+        }
+
+        input[placeholder] {
+            font-style: italic;
+        }
+
+        .iconbox-parent {
+            margin: 10px 150px;
+            width: 80%;
+            height: 150px;
+            /* border: 2px solid black; */
+            display: flex;
+            gap: 30px;
+        }
+
+        .iconbox {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .box1 {
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid black; */
+            background-color: rgb(0, 179, 69);
+            align-self: center;
+            margin-right: 165px;
+            padding: 5px;
+        }
+
+        .box2 {
+            height: 150px;
+            width: 150px;
+            /* border: 2px solid black; */
+            background-color: rgb(0, 179, 69);
+            align-self: center;
+
+        }
+
+        .box3 {
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid black; */
+            background-color: rgb(0, 179, 69);
+            align-self: center;
+            margin-left: 165px;
+            padding: 5px;
+        }
+
+        i {
+            font-size: 35px;
+        }
+        .portfolio{
+            width: 80%;
+            margin-top: 30px;
+            margin-left: 150px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-bottom: 2px solid rgb(0, 179, 69);
+            padding-bottom: 5px;
+        }
+        .images{
+            width: 80%;
+            height: 600px;
+            /* border: 2px solid black; */
+            margin-top: 40px;
+            margin-left: 150px;
+            display: grid;
+            grid-template-columns: 180px 80px 80px 180px 180px 80px 80px 180px;
+            grid-template-rows: 250px 180px 120px;
+            grid-column-gap: 22.5px;
+            grid-row-gap: 22.5px;
+        }
+        .items{
+            /* border: 2px solid black; */
+        }
+        .item1{
+            background-image: url(https://d8qb5cxd9qhkd.cloudfront.net/images/404-Shoes_on_log.max-800x600.original.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item2{
+            background-image: url(https://wallpapercrafter.com/sizes/2560x1440/202432-a-long-mountain-ridge-crowned-with-a-tall-snow-top.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item3{
+            background-image: url(https://wallpapercrafter.com/desktop/237716-quaint-red-barn-on-a-countryside-farm-in-fallcount.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 6/9;
+            grid-row: 1/2;
+        }
+        .item4{
+            background-image: url(https://c1.peakpx.com/wallpaper/216/928/951/flower-vase-vase-balcony-urban-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .item5{
+            background-image: url(https://www.chromethemer.com/download/hd-wallpapers/new-york-nights-2560x1440.jpg);
+            background-repeat: no-repeat;
+            background-size: 101% 100%;
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+        .item6{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mR8z-goRpBoWhmlCtb8AmRnA7ShhL06M2WI7UrbsWeMg-iG5dMJXcXYQDWaCWY0GSwg&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 5/7;
+            grid-row: 2/3;
+        }
+        .item7{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Vegetables%28byWebvilla%29.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 7/9;
+            grid-row: 2/3;
+        }
+        .item8{
+            background-image: url(https://i.ytimg.com/vi/2pSBkl7Kpn0/hqdefault.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .item9{
+            background-image: url(https://s1.1zoom.me/prev2/516/Sunrises_and_sunsets_Fields_Houses_Trees_515572_300x168.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+        .item10{
+            background-image: url(https://pbs.twimg.com/media/EwsgGCUXAAULR7M.jpg);
+            https://pbs.twimg.com/media/EwsgGCUXAAULR7M.jpg
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 4/6;
+            grid-row: 3/4;
+        }
+        .item11{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Pm_gj_kaC4BMGGW3R4yTgUwxpkLPGvLMSMZcPEy9oL5goZ-FLybB-DAjARmQHZO6ToE&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 6/8;
+            grid-row: 3/4;
+        }
+        .item12{
+            background-image: url(https://blogs.iadb.org/transporte/wp-content/uploads/sites/9/2018/12/andrea-boldizsar-183-unsplash-521x350.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            grid-column: 8/9;
+            grid-row: 3/4;
+        }
+        .footer{
+            background-color: rgb(0, 179, 69);
+            color: white;
+            width: 90%;
+            height: 35px;
+            margin-top: 25px;
+            margin-left: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+    </Style>
+</head>
+
+<body>
+    <nav>
+        <h2 class="solidity">SOLIDITY</h2>
+        <input type="text" name="search" id="" placeholder="Search here....">
+        <p class="statement">Free Responsive Template</p>
+    </nav>
+    <div class="iconbox-parent">
+        <div class="iconbox box1">PREV</div>
+        <div class="iconbox box2"><i class="fa-solid fa-house-chimney"></i></div>
+        <div class="iconbox box2"><i class="fa-solid fa-wrench"></i></div>
+        <div class="iconbox box2"><i class="fa-solid fa-image"></i></div>
+        <div class="iconbox box2"><i class="fa-solid fa-phone"></i></div>
+        <div class="iconbox box3">NEXT</div>
+    </div>
+    <div class="portfolio">OUR PORTFOLIO</div>
+    <div class="images">
+        <div class="items item1"></div>
+        <div class="items item2"></div>
+        <div class="items item3"></div>
+        <div class="items item4"></div>
+        <div class="items item5"></div>
+        <div class="items item6"></div>
+        <div class="items item7"></div>
+        <div class="items item8"></div>
+        <div class="items item9"></div>
+        <div class="items item10"></div>
+        <div class="items item11"></div>
+        <div class="items item12"></div>
+    </div>
+    <div class="footer">Copyright &copy; 2084 Company Name - Free Responsive Template by Solidity</div>
+</body>
+
+</html>

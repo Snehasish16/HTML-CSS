@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+    <style>
+        .container{
+            margin: 140px;
+            width: 960px;
+            height: auto;
+            background-color: rgb(65, 60, 59);
+            border: 15px solid rgb(65, 60, 59);
+            display: grid;
+            grid-template-columns: 200px 200px 100px 200px 200px;
+            grid-template-rows: 140px 100px 80px 150px;
+            gap: 15px;
+        }
+        /* .items{
+            background-color: brown;
+        } */
+        .item-1{
+            background-color: rgb(229, 62, 54);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item-2{
+            background-color: rgb(43, 192, 192);
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .item-3{
+            background-color: rgb(201, 163, 94);
+            grid-column: 4/6;
+            grid-row: 1/2;
+        }
+        .item-4{
+            background-color: rgb(201, 163, 94);
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item-5{
+            background-color: whitesmoke;
+            grid-column: 3/5;
+            grid-row: 2/4;
+        }
+        .item-6{
+            background-color: white;
+            grid-column: 1/2;
+            grid-row: 3/5;
+        }
+        .item-7{
+            background-color: rgb(229, 62, 54);
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .item-8{
+            background-color: rgb(43, 192, 192);
+            grid-column: 4/5;
+            grid-row: 4/5;
+        }
+        .item-9{
+            background-color: rgb(229, 62, 54);
+            grid-column: 5/6;
+            grid-row: 2/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="items item-1"></div>
+            <div class="items item-2"></div>
+            <div class="items item-3"></div>
+            <div class="items item-4"></div>
+            <div class="items item-5"></div>
+            <div class="items item-6"></div>
+            <div class="items item-7"></div>
+            <div class="items item-8"></div>
+            <div class="items item-9"></div>
+    </div>
+</body>
+</html>
