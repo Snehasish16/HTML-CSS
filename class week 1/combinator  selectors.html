@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+        div p{
+            color: aqua;
+        }
+        div>p{
+            color:blue
+        }
+        div+p{
+            color: chartreuse;
+        }
+        div~h1{
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator selector</h1>
+    <p>Paragraph 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, inventore!</p>
+    <p>Paragraph 2 Lorem ipsum dolor sit amet consectetur.</p>
+    <div>
+        <h1>Good evening</h1>
+        <p>Paragraph 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex sint temporibus non repellat nemo!</p>
+        <p>Paragraph 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2>Good morning</h2>
+        <section>
+            <p>Paragraph 5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga harum tenetur vero debitis quaerat recusandae?</p>
+            <h1>Hello world</h1>
+            <p>paragraph 6Lorem ipsum dolor sit amet.</p>
+        </section>
+    </div>
+    <p>Paragraph 7 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae unde culpa minus necessitatibus nisi eveniet aliquid.</p>
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>
