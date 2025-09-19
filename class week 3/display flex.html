@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 500px;
+            border: 2px solid black;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .items{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: cyan;
+        }
+        .parent{
+            width: 700px;
+            height: 500px;
+            margin-top: 50px;
+            border: 2px solid black;
+            background-color: rgb(243, 98, 98);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: rgb(0, 55, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Display flex
+    </h1>
+    <div class="container">
+        <div class="items">item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+
+        <div class="items">item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+
+        <div class="items">item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+
+        <div class="items">item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+    </div>
+     <div class="parent">
+        <div class="child">item-1</div>
+        <div class="child">item-2</div>
+        <div class="child">item-3</div>
+        <div class="child">item-4</div>
+    </div>
+</body>
+</html>

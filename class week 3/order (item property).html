@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            display: flex;
+        }
+        .items{
+            height: 100px;
+            width: 100px;
+            /* background-color: beige; */
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+        .item-1{
+            order: 3;
+            background-color:rgb(64, 135, 122) ;
+        }
+        .item-2{
+            order: 1;
+            background-color: rgb(222, 144, 216);
+
+        }
+        .item-3{
+            order: 2;
+            background-color: rgb(233, 214, 165);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">item-1</div>
+        <div class="items item-2">item-2</div>
+        <div class="items item-3">item-3</div>
+    </div>
+</body>
+</html>

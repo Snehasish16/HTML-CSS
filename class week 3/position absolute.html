@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute</title>
+    <style>
+        .grandparent{
+            border: 2px solid black;
+            background-color: rgb(255, 157, 72);
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+        .parent{
+            border: 2px solid black;
+            background-color: rgb(248, 99, 233);
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .child{
+            border: 2px solid black;
+            background-color: darkcyan;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>position absolute</h1>
+    <p>lorem10</p>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae modi repellat vitae veritatis voluptate aperiam nam harum eligendi? Consequuntur amet quidem aut deserunt. Quas mollitia odio odit, sapiente molestiae quibusdam ullam reiciendis aliquid modi?</p>
+</body>
+</html>

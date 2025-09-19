@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+    <style>
+        nav {
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .flipkart-logo {
+            margin-top: 10px;
+        }
+
+        .main {
+            height: 900px;
+            width: 100%;
+            background-color: rgba(200, 200, 200, 0.485);
+            border: 2px solid rgba(200, 200, 200, 0.352);
+            margin-top: px;
+        }
+
+        input {
+            background-image: url(https://img.icons8.com/ios7/600/search.png);
+            background-size: 3.3%;
+            background-position-y: center;
+            background-position: 2%;
+            background-repeat: no-repeat;
+            width: 700px;
+            height: 37px;
+            margin-left: 50px;
+            margin-top: 7px;
+            border-radius: 5px;
+            background-color: rgb(230, 243, 255);
+            border: none;
+            /* font-weight: 600; */
+            font-size: 16px;
+            padding-left: 50px;
+        }
+
+        .account {
+            width: 130px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .cart {
+            width: 100px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 0px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .seller {
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 0px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .three-dot {
+            width: 50px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        button:hover {
+            background-color: rgba(233, 233, 233, 0.816);
+            border: 2px solid rgba(220, 220, 220, 0.908);
+        }
+
+        .content {
+            width: 93%;
+            height: 200px;
+            background-color: white;
+            /* border: 2px solid black; */
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 30px;
+            padding-left: 80px;
+        }
+
+        .product-category {
+            height: 150px;
+            width: 8%;
+            flex-grow: 0;
+            margin-left: 3px;
+            /* border: 2px solid black; */
+        }
+
+        .red-label {
+            width: 60%;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+        h3 {
+
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .mobile {
+            width: 70%;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .fashion {
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .electronics {
+            width: 80%;
+            margin-top: 12px;
+            margin-left: 10%;
+        }
+
+        .appliances {
+            width: 90%;
+            margin-top: 22px;
+            margin-left: 5%;
+        }
+
+        .furniture {
+            width: 90%;
+            margin-top: px;
+            margin-left: 5%;
+        }
+
+        .flight {
+            width: 110%;
+            margin-top: 30px;
+            margin-left: 5%;
+        }
+
+        .toy {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 5%;
+        }
+
+        .bike {
+            width: 110%;
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+        .advertisement {
+            width: 98.5%;
+            height: 300px;
+            background-color: white;
+            margin: 10px;
+            padding-left: 0px;
+        }
+
+        .ad-ribbon {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .ad-2 {
+            margin-top: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="https://www.flipkart.com" target="_blank">
+            <img class="flipkart-logo"
+                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_joinplus-3a4cec.svg"
+                alt="flipkart logo">
+        </a>
+
+        <input type="text" placeholder="Search for Products, Brand and More">
+
+        <button class="account"><i class="fa-regular fa-circle-user">
+            </i> &nbsp;Account <i class="fa-solid fa-angle-down down-arrow"></i>
+            <!-- <i class="fa-solid fa-angle-down up-arrow"></i> -->
+        </button>
+
+        <button class="cart"><i class="fa-solid fa-cart-shopping"></i> &nbsp;Cart</button>
+
+        <button class="seller"><i class="fa-solid fa-store"></i> &nbsp;Become a seller</button>
+
+        <button class="three-dot"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    </nav>
+    <div class="main">
+        <div class="content">
+            <div class="product-category">
+                <img class="red-label"
+                    src="https://www.antmascot.com/_next/image?url=https%3A%2F%2Fd3olmw93qe7qxx.cloudfront.net%2Fimages%2Fproducts%2FH16118.jpg&w=3840&q=75"
+                    alt="">
+
+                <h3 style="margin-top: 5px;">Kilos</h3>
+            </div>
+            <div class="product-category">
+                <img class="mobile"
+                    src="https://www.bigcmobiles.com/media/catalog/product/cache/e19e56cdd4cf1b4ec073d4305f5db95a/a/p/apple_iphone_16_ultramarine__2.jpg"
+                    alt="">
+
+                <h3 style="margin-top: 0px;">Mobiles</h3>
+            </div>
+            <div class="product-category">
+                <img class="fashion"
+                    src="https://img.freepik.com/free-photo/sexy-smiling-beautiful-woman-her-handsome-boyfriend-happy-cheerful-family-having-tender-momentsyoung-passionate-couple-hugging-sensual-pair-isolated-white-cheerful-happy_158538-22583.jpg"
+                    alt="">
+
+                <h3 style="margin-top: 5px;">Fashion</h3>
+
+            </div>
+            <div class="product-category">
+                <img class="electronics"
+                    src="https://png.pngtree.com/png-vector/20240803/ourmid/pngtree-headphones-on-laptop-png-image_13353313.png"
+                    alt="">
+
+                <h3 style="margin-top: -1px;">Electronics</h3>
+
+            </div>
+            <div class="product-category">
+                <img class="furniture"
+                    src="https://png.pngtree.com/png-clipart/20241009/original/pngtree-room-furniture-design-concept-png-image_16252599.png"
+                    alt="">
+
+                <h3 style="margin-top: 0px;">Furniture</h3>
+            </div>
+            <div class="product-category">
+                <img class="appliances"
+                    src="https://t3.ftcdn.net/jpg/03/29/32/18/360_F_329321861_lDvYP4AmGItwS6slpDKfYHbljjHw6sdi.jpg"
+                    alt="">
+
+                <h3 style="margin-top: 11px;">Appliances</h3>
+            </div>
+            <div class="product-category">
+                <img class="flight" src="https://t4.ftcdn.net/jpg/02/11/60/75/360_F_211607578_WirpVpno9vb4IzCnw20fsZEFe5LDeW10.jpg" alt="">
+
+                <h3 style="margin-top: 8px;">Flight</h3>
+            </div>
+            <div class="product-category">
+                <img class="toy"
+                    src="https://media.istockphoto.com/id/167154546/photo/cute-teddy-bear-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=pVYdEJzfUBEdZ6nTrEGKwXST3yvJuMKsVceG9y6wJoE="
+                    alt="">
+
+                <h3 style="margin-top: 10px;">Beauty, Toys & more</h3>
+            </div>
+            <div class="product-category">
+                <img class="bike"
+                    src="https://media.triumphmotorcycles.co.uk/image/upload/q_auto:eco/sitecoremedialibrary/media-library/images/motorcycles/modern-classics/my25/bajaj%20-%20india/2025%20bajaj%20bikes%20cgi/speed%20400%202025%20bajaj/speed400_my25_side-white.jpg"
+                    alt="">
+
+                <h3 style="margin-top: 5px;">Two wheelers</h3>
+            </div>
+        </div>
+        <div class="advertisement">
+            <img class="ad-ribbon" src="ad ribbon.png" alt="">
+        </div>
+
+        <div class="advertisement">
+            <img class="ad-2" src="ad 2.png" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>
