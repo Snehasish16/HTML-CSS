@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        .container 
+        {
+            width: 300px;
+            height: 350px;
+            margin: 150px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+        }
+        .left,.right{
+            height: inherit;
+            width: 150px;
+            background-color: rgb(32, 147, 218);
+            border: inherit;
+            position: absolute;
+            top: 0px;
+            transition: all 2s linear 0s;
+            
+        }
+        .left{
+            left: 0px;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .right{
+            right: 0px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        .container:hover>.left{
+            transform: translateX(-150px);
+        }
+        .container:hover>.right{
+            transform: translateX(150px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/8b/bd/9f/8bbd9f16572031865fad17ee9f9cc1fb.jpg" alt="">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

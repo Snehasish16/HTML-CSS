@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative;
+            margin: 200px auto;
+        }
+        .items{
+            width: inherit;
+            height: inherit;
+            border: inherit;
+            position: absolute;
+            transition: all 2s linear 0s;
+
+        }
+        .d1{
+            background-color: cadetblue;
+            transition-delay: 0s;
+        }
+        .d2{
+            background-color: orange;
+            transition-delay: 1s;
+
+        }
+        .d3{
+            background-color: greenyellow;
+            transition-delay: 2s;
+
+        }
+        .d4{
+            background-color: palevioletred;
+            transition-delay: 3s;
+
+        }
+        .container:hover>.d1{
+            transform: translateX(300px) rotate(3600deg) scale(1.5);
+        }
+        .container:hover>.d2{
+            transform: translateY(-300px) rotate(3600deg) scale(1.5);
+        }
+        .container:hover>.d3{
+            transform: translateX(-300px) rotate(3600deg) scale(1.5);
+        }
+        .container:hover>.d4{
+            transform: translateY(300px) rotate(3600deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items d1">1</div>
+        <div class="items d2">2</div>
+        <div class="items d3">3</div>
+        <div class="items d4">4</div>
+    </div>
+</body>
+</html>

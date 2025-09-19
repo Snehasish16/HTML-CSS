@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media querry</title>
+    <style>
+        body{
+            background-color: rgb(211, 239, 240);
+            transition: background-color 1s ease;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            transition: background-color 1s ease;
+
+        }
+        .box{
+            background-color: rgb(238, 206, 206);
+            height: 60px;
+            width: 500px;
+            border: 2px solid black;
+            transition: background-color 1s ease;
+              padding: 15px 90px;
+              box-sizing: border-box;
+
+            
+        }
+        @media screen and (max-width:500px){ /* @media (orientation:landscape) */
+            body{
+                background-color: crimson;
+            }
+            .box{
+                background-color: bisque;
+                
+              
+                
+            }
+            .container{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <H1 align="center">Hi welcome all</H1>
+    <div class="container">
+    <div class="box">item 1</div>
+    <div class="box">item 2</div>
+    <div class="box">item 3</div>
+
+    </div>
+    
+</body>
+</html>

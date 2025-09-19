@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+            background-color: black;
+        }
+        .items{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            animation: bouncing 0.5s linear 0s infinite alternate;
+        }
+        .d1{
+            background-color: rgb(255, 34, 0);
+            /* animation-duration: 0.3s; */
+            animation-delay: 0s;
+        }
+        .d2{
+            background-color: rgb(255, 251, 0);
+            /* animation-duration: 0.4s; */
+            animation-delay: 0.2s;
+
+        }
+        .d3{
+            background-color: rgb(255, 140, 0);
+            /* animation-duration: 0.5s; */
+            animation-delay: 0.4s;
+
+        }
+        .d4{
+            background-color: rgb(77, 255, 0);
+            /* animation-duration: 0.6s; */
+            animation-delay: 0.6s;
+
+        }
+        .d5{
+            background-color: rgb(84, 159, 246);
+            /* animation-duration: 0.7s; */
+            animation-delay: 0.8s;
+
+        }
+        .d6{
+            background-color: rgb(226, 130, 255);
+            /* animation-duration: 0.8s; */
+            animation-delay: 1s;
+
+        }
+        .d7{
+            background-color: rgb(167, 166, 166);
+            /* animation-duration: 0.9s; */
+            animation-delay: 1.2s;
+
+        }
+        @keyframes bouncing {
+            0%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items d1"></div>
+        <div class="items d2"></div>
+        <div class="items d3"></div>
+        <div class="items d4"></div>
+        <div class="items d5"></div>
+        <div class="items d6"></div>
+        <div class="items d7"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <script src="https://kit.fontawesome.com/f8dd27610c.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            height: 30px;
+            display: flex;
+            padding-left: 40px;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .header-offer {}
+
+        .main-bg {
+            position: relative;
+        }
+
+        .left-bg {
+            display: inline-block;
+            width: 70%;
+            height: 100vh;
+            background-color: #f9bac7;
+            z-index: -1;
+        }
+
+        .right-bg {
+            display: inline-block;
+            background-color: #38c4c1;
+            width: 30%;
+            height: 100vh;
+            position: absolute;
+            left: 70%;
+            z-index: -1;
+        }
+
+        nav {
+            height: 60px;
+            width: 80%;
+            background-color: rgb(255, 254, 254);
+            position: absolute;
+            z-index: 1;
+            top: 50px;
+            left: 150px;
+            box-shadow: -10px 12px 20px rgba(0, 0, 0, 0.678);
+        }
+
+        .closet-logo {
+            width: 6%;
+            position: absolute;
+            top: 2px;
+            left: 35px;
+        }
+
+        .search-bar {
+            background-color: #f2f2f296;
+            border: 0px;
+            width: 300px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 150px;
+            padding-left: 45px;
+            background-image: url(https://img.icons8.com/ios7/600/search.png);
+            background-size: 7%;
+            background-repeat: no-repeat;
+            background-position-y: 6px;
+            background-position-x: 10px;
+        }
+
+        .home {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            left: 550px;
+            top: 10px;
+        }
+        button {
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button:hover {
+            background-color: #f2f2f296;
+        }
+
+        .icons {
+            margin-left: 150px;
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+        }
+        .content{
+            height: 500px;
+            width: 80%;
+            background-color: #f9c8cf;
+            position: absolute;
+            z-index: 1;
+            top: 115px;
+            left: 150px;
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.678);
+        }
+        .description{
+            width: 300px;
+            font-size: 16px;
+            margin-top: 80px;
+            margin-left: 80px;
+            border: 2px solid black;
+        }
+        .shop-now{
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+        <p class="header-offer">20% off Summer Sale</p>
+    </header>
+    <div class="main-bg">
+        <div class="left-bg">.</div>
+        <div class="right-bg"></div>
+        <nav>
+            <img class="closet-logo" src="WhatsApp Image 2025-05-26 at 11.41.59 PM.jpeg" alt="">
+            <input class="search-bar" type="text" placeholder="search for products, brands and more">
+            <div class="home">
+                <button>Home</button>
+                <button>Shop</button>
+                <button>About</button>
+                <button>Contact</button>
+                <div class="icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+           <div class="description">
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">New Arrivals</h1>
+            <p>Discover the latest trends with our new arrivals. Designed with a focus on both style and quality, our collection offers timeless prices for every wardrobe</p>
+            <button class="shop-now">Shop Now</button>
+           </div>
+           <div class="models">
+                <div class="model1"><img src="mode" alt=""></div>
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>

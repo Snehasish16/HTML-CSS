@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving</title>
+    <style>
+    body{
+        background-color: black;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid black;
+        animation: animate 2s linear 0s infinite alternate;
+    }
+    body{
+        animation: bg 2s linear 0s infinite forwards;
+    }
+    @keyframes animate 
+    {
+        0%,100%{
+            top: 0px;
+            left: 0px;
+            position: relative;
+            background-color: yellow;
+
+        }
+        25%{
+            top: 0px;
+            left: 500px;
+            position: relative;
+            background-color: blue;
+
+        }
+        50%{
+            top: 500px;
+            left: 500px;
+            position: relative;
+            background-color: greenyellow;
+
+        }
+        75%{
+            top: 500px;
+            left: 0px;
+            position: relative;
+            background-color: red;
+
+        }
+    }
+        
+        @keyframes bg {
+    
+        0% {
+             background-color: rgb(0, 0, 0);
+
+        }
+        25%{
+            
+            background-color: rgb(92, 92, 203);
+
+        }
+        50%{
+            
+            background-color: rgb(255, 151, 47);
+
+        }
+        75%{
+            background-color: rgb(227, 225, 90);
+
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
